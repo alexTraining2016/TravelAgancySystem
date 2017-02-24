@@ -1,39 +1,50 @@
 body {
-    height: 9999px;
     padding: 0;
     margin: 0;
 }
 
 #header_top {
-    width: 80%;
-    left: 10%;
-    height: 42px;
+    width: 100%;
+    background-color: #FFF;
+    height: 62px;
     position: fixed;
-    top: 0;
     z-index: 2;
 }
 
 #header_nav {
-    width: 80%;
-    margin-left: 10%;
-    height: 42px;
+    width: 100%;
+    top: 72px;
+    background-color: #FFF;
+    height: 52px;
     z-index: 1;
 }
 
 #header_nav.fixed {
     position: fixed;
-    top: 42px;
+    top: 62px;
 }
 
 #carouselHeader {
-    width: 80%;
-    left: 10%;
+    width: 90%;
+    top: 62px;
+    left: 5%;
     z-index: 0;
     box-shadow: inset 0 9999px 0 0 rgba(0,0,0,.75);
 }
 
+#right_header{
+    margin-left: auto;
+}
+
+.main_content{
+    margin-top: 82px;
+    margin-left: 5%;
+}
+.main_content.fixed{
+    margin-top: 150px;
+}
+
 .my_img{
-    width: 100%;
-    max-height: 350px;
+    max-height: 520px;
     opacity: .85;
 }

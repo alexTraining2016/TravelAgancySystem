@@ -15,19 +15,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 </head>
 
-<script type="text/javascript" src="//code.jquery.com/jquery-2.2.4.js"></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<script type="text/javascript" src="${CaruselJs}"></script>
 <body>
     <div id = "main_header">
-        <nav id="header_top" class="navbar navbar-inverse bg-primary">
+        <nav id="header_top" class="navbar navbar-toggleable-md">
             <div id = "left-header" class = "Header">
-                <a class="navbar-brand" href="#"><h5>${title_name}</h5></a>
+                <a class="navbar-brand" href="/index" class="navbar_item "><h1>${title_name}</h1></a>
             </div>
-            <div id = "right-header" class = "Header">
-                <div id = "app-search" class="Search">
-                    <form accept-charset="UTF-8" class="Search" method="get" action="/search"></form>
-                </div>
+            <div id = "right_header" class = "Header">
+                <form accept-charset="UTF-8" class="form-inline my-2"  method="get" action="/search">
+                    <input class="form-control mr-sm-2 navbar_item" name="search" type="text" placeholder="Search">
+                    <button class="btn btn-outline-primary my-2 mr-sm-0  navbar_item" type="submit"> Search </button>
+                </form>
                 <div id = "app-user">
                 </div>
             </div>
@@ -72,11 +70,65 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <nav id = "header_nav" class="navbar navbar-inverse bg-primary">
+        <nav id = "header_nav" class="navbar navbar-inverse bg-light">
+            <ul id="mainTab" class="nav nav-pills nav-fill" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#home" role="tab">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#shares" role="tab">Shares</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#rest" role="tab">Rest</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tour" role="tab">Tour</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#shopping" role="tab">Shopping</a>
+                </li>
+            </ul>
         </nav>
     </div>
-    <div id="main_body">
+    <div class="main_content">
+        <div class="tab-content">
+            <div class="tab-pane active fade show" id="home" role="tabpanel">
+                D<br>DD<br>DATA1D<br>DD<br>DATA1D<br>DD<br>DATA1D<br>DD<br>DATA1D<br>DD<br>DATA1D<br>DD<br>DATA1
+                D<br>DD<br>DATA1D<br>DD<br>DATA1D<br>DD<br>DATA1D<br>DD<br>DATA1D<br>DD<br>DATA1D<br>DD<br>DATA1
+                D<br>DD<br>DATA1D<br>DD<br>DATA1D<br>DD<br>DATA1D<br>DD<br>DATA1D<br>DD<br>DATA1D<br>DD<br>DATA1
+            </div>
+            <div class="tab-pane fade" id="shares" role="tabpanel">
+                SHARE<br>SHARE<br>SHARE<br>SHARE<br>SHARE<br>DD<br>SHARE<br>DD<br>SHARE<br>DD<br>SHARE<br>DD<br>SHARE
+                SHARE<br>SHARE<br>SHARE<br>SHARE<br>SHARE<br>DD<br>SHARE<br>DD<br>SHARE<br>DD<br>SHARE<br>DD<br>SHARE
+            </div>
+            <div class="tab-pane fade" id="rest" role="tabpanel">
+                REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>
+                REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>
+                REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>
+                REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>
+                REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>REST<BR>
+            </div>
+            <div class="tab-pane fade" id="tour" role="tabpanel">DDDDATA3
+            DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>
+            DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>
+            DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>
+            DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>
+            DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>DDDDATA3<BR>
+            </div>
+            <div class="tab-pane fade" id="shopping" role="tabpanel">DDDDATA4
+            DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>
+            DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>
+            DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>
+            DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>
+            DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>
+            DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>DDDDATA4<BR>
+            </div>
+
+        </div>
     </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.2.4.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="${CaruselJs}"></script>
 </body>
 
 </html>
